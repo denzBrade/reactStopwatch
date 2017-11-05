@@ -7,8 +7,8 @@ class LapTimes extends Component {
     render() {
         // Markup for each laptime 
         const rows = this.props.lapTimes.map((lapTime, index) => 
-            <ul>
-                <li><span>Lap: {index + 1}</span> Time: <TimeElapsed timeElapsed={lapTime}/></li>
+            <ul className="lap-list" key={++index}>
+                <li className="lap-list-item"><span className="lap">Lap: {index}</span><TimeElapsed timeElapsed={lapTime}/></li>
             </ul>
         );
 

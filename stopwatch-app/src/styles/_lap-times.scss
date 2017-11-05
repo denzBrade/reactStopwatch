@@ -1,0 +1,13 @@
+#lap-times {
+    border-top: 1px solid $border-color;
+    margin-top: $baseline;
+}
+
+.lap-list {
+    padding: 0;
+    list-style: none;
+
+    .lap-list-item .lap {        
+        font-weight: bold;
+    }
+  }

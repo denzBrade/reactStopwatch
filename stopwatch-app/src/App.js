@@ -69,16 +69,16 @@ class App extends Component {
         <TimeElapsed id="timer" timeElapsed={timeElapsed} />
 
         {/* Toggle the button text depending if the stopwatch is running or not */}
-        <button onClick={this.toggle}>
+        <button className="button button-start" onClick={this.toggle}>
           {isRunning ? 'Stop' : 'Start'}
         </button>
 
         {/* When running button text = 'Lap' / When stopped text = 'Reset' & when timer is reset disable button*/}
-        <button 
+        <button className="button button-alternate"
           onClick = {isRunning ? this.lap : this.reset}
           disabled = {!isRunning && !timeElapsed}
         >
-          {isRunning || !timeElapsed ? 'Lap' : 'Reset'}
+          {isRunning || !timeElapsed ? 'Lap' : 'Reset'} 
         </button>
 
         {/* When laptimes exist Render LapTime Component */}

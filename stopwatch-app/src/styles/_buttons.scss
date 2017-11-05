@@ -1,0 +1,17 @@
+.button {
+    -webkit-appearance: none;
+    border-style: none;
+    padding: 5px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.button-start {
+    margin-left: -24px;
+    margin-right: 24px;
+}
+
+.button-alternate {
+    margin-left: 24px;
+}

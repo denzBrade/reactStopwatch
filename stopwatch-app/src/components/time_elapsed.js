@@ -21,9 +21,9 @@ class TimeElapsed extends Component {
         let formatSec = ('0' + units.sec).slice(-2);
 
         return (
-            <div id={this.props.id}>
+            <div className="clock" id={this.props.id}>
                 <span>{formatMin}:</span>
-                <span>{formatSec}:</span>
+                <span>{formatSec}.</span>
                 <span>{units.msec}</span>
             </div>
         );
