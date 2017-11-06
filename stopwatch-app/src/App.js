@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+// Our Components
 import TimeElapsed from './components/time_elapsed';
 import LapTimes from './components/lap_times';
 
