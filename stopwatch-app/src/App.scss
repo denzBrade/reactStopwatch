@@ -1,6 +1,12 @@
 // General Imports
 @import './styles/variables';
 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
 .App {
   text-align: center;  
 }
